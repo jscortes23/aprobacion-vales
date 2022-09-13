@@ -1,0 +1,287 @@
+
+@supports (font-variation-settings: normal) {
+    @font-face {
+        font-family: 'Montserrat';
+        src: url('/css/font/Montserrat-VariableFont_wght.ttf');
+        font-weight: 100 1000;
+        font-display: swap;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --verde: #CADC31;
+    --link: #2A40FF;
+    --morado: #7A8DD1;
+    --alerta: #F55D5D;
+
+    --xx-lg: 3.2rem;
+    --x-lg: 2.2rem;
+    --lg: 1.8rem;
+    --md: 2.2rem;
+    --sm: 1.6rem;
+}
+
+img, picture {
+    max-width: 100%;
+    display: block;
+}
+
+html {
+    font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 62.5%;
+    font-weight: 500;
+}
+
+/* Font sizes */
+.h1 {
+    font-size: var(--x-lg);
+    font-weight: 700;
+    line-height: 2.682rem;
+}
+
+.fs-16 {
+    font-size: var(--sm);
+    line-height: 1.95rem;
+}
+
+.fs-22 {
+    font-size: var(--x-lg);
+    line-height: 2.682rem;   
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.txt-purple {
+    color: var(--morado);
+}
+.container__voucher {
+    padding: 24px 22px 62px;
+}
+
+.content__voucher {
+    margin-top: 40px;
+}
+
+.icon {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.icon-logo {
+    width: 205px;
+    aspect-ratio: 2/1;
+    background-image: url('/assets/icons/taxis-libres.svg');
+}
+
+.voucher-info {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    /* grid-template-rows: 1fr 1fr; */
+    /* column-gap: 24px; */
+    align-items: center;
+    row-gap: 12px;
+}
+
+.voucher-info .column:nth-child(1){
+    order: 1;
+}
+
+.voucher-info .column:nth-child(2){
+    order: 2;
+}
+
+.voucher-info .column:nth-child(3){
+    order: 4;
+}
+
+.voucher-info .column:nth-child(4){
+    order: 5;
+}
+
+.voucher-info .column:nth-child(5){
+    order: 3;
+    min-width: 300px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+}
+
+.block-origin {
+    position: relative;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 24px;
+    border-top: 1.3px solid #E5E5E5;
+}
+
+.block-origin::before {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #FFFFFF;
+    border: 2.4px solid var(--verde);
+    border-radius: 50%;
+}
+
+.block-origin::after {
+    position: absolute;
+    left: 6.4px;
+    top: 32px;
+    content: '';
+    width: 1px;
+    height: 40px;
+    border-left: 2px dotted var(--verde);
+}
+
+.block-origin p:first-child {
+    order: 1;
+}
+
+.block-destiny {
+    position: relative;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    border-bottom: 1.3px solid #E5E5E5;
+}
+
+.block-destiny::before {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: var(--verde);
+    border: 2.4px solid var(--verde);
+    border-radius: 50%;
+}
+
+.block-destiny p:first-child {
+    order: 1;
+}
+
+.voucher-detail-service {
+    margin-top: 14px;
+    margin-bottom: 22px;
+    padding-bottom: 22px;
+    border-bottom: 1.3px solid #E5E5E5;
+}
+
+.content-voucher-detail {
+    margin-top: 14px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(min-content, max-content) minmax(100px, max-content);
+    justify-content: space-between;
+    row-gap: 8px;
+    /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+}
+
+.item-voucher-detail:nth-child(even) {
+    text-align: right;
+}
+
+.voucher-map {
+    margin-top: 16px;
+    margin-bottom: 46px;
+}
+
+.map {
+    padding-bottom: 22px;
+    width: 100%;
+    max-width: 563px;
+    aspect-ratio: 1/1;
+    border-bottom: 1.3px solid #E5E5E5;
+}
+
+.voucher-reason {
+    margin-top: 32px;
+}
+
+.rectangle-grey {
+    background-color: #EFEFFC;
+    padding: 27px 24px 41px;
+}
+
+.btn-n {
+    display: inline-block;
+    font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    line-height: 2.194rem;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-n-primary {
+    padding: 16px 32px;
+    font-size: var(--lg);
+    background-color: var(--verde);
+}
+
+.voucher-decision {
+    margin-bottom: 56px;
+}
+
+.input {
+    display: inline-block;
+    display: none;
+}
+
+.input-radio {
+    margin-bottom: 18px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 18px;
+}
+
+.input-radio::before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    border: 2px solid #002765;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+}
+
+.input-radio::after {
+    content: '';
+    position: absolute;
+    left: 8px;
+    width: 18px;
+    height: 18px;
+    display: none;
+    background-color: var(--verde);
+    border-radius: 50%;
+}
+
+.input:checked + .input-radio::after {
+    display: initial;
+}
+
+/* Media queries */
+@media (min-width: 600px) {
+    html {
+        background-color: lavenderblush;
+    }
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aprobación del vale</title>
+    <link
+      rel="preload"
+      href="/css/font/Montserrat-VariableFont_wght.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/css/main.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript> <link rel="stylesheet" href="/css/main.css" /></noscript>
+  </head>
+  <body>
+    <main class="container__voucher">
+      <span class="icon icon-logo"></span>
+      <h1 class="h1">Aprobación del vale</h1>
+      <div class="content__voucher">
+        <section class="row voucher-info fs-16">
+          <div class="column">
+            <p class="fw-700">Miércoles 20 abr. 2022</p>
+            <p class="fw-700 txt-purple">ID del viaje: 23464</p>
+          </div>
+          <div class="column">
+            <p class="fw-700">No. de Vale:</p>
+            <p class="">456789567890</p>
+          </div>
+          <div class="column block-origin">
+            <p class="txt-purple">
+              Origen: <span class="time">11:43 a.m.</span>
+            </p>
+            <p class="">Ac 9 # 50 - 15</p>
+          </div>
+          <div class="column block-destiny">
+            <p class="txt-purple">
+              Destino: <span class="time">12:21 p.m.</span>
+            </p>
+            <p class="">Ak 24 - Cl 53b</p>
+          </div>
+          <div class="column">
+            <p class="fw-700">Solicitado desde:</p>
+            <p class="">WhatsApp</p>
+          </div>
+        </section>
+        <section class="row voucher-detail-service fs-16">
+          <h3 class="fw-700">Detalle del servicio</h3>
+          <div class="content-voucher-detail">
+            <p class="item-voucher-detail">Tipo de taxi:</p>
+            <p class="item-voucher-detail">Normal</p>
+            <p class="item-voucher-detail">Conductor:</p>
+            <p class="item-voucher-detail">Gilberto Fernández Ordoñez</p>
+            <p class="item-voucher-detail">Placa:</p>
+            <p class="item-voucher-detail">RMZ616</p>
+            <p class="item-voucher-detail">Recorrido:</p>
+            <p class="item-voucher-detail">Ver mapa</p>
+          </div>
+        </section>
+        <section class="row voucher-cost-trip fs-16">
+          <h3 class="fw-700">Valor del viaje</h3>
+          <div class="content-voucher-detail">
+            <p class="item-voucher-detail">Viaje:</p>
+            <p class="item-voucher-detail">$17.500</p>
+            <p class="item-voucher-detail">Incentivo:</p>
+            <p class="item-voucher-detail">$0</p>
+            <p class="item-voucher-detail">Recargo noc. dom. o fest:</p>
+            <p class="item-voucher-detail">$2.000</p>
+            <p class="item-voucher-detail">Puerta a puerta:</p>
+            <p class="item-voucher-detail">$2.000</p>
+            <p class="item-voucher-detail">Aeropuerto:</p>
+            <p class="item-voucher-detail">$0</p>
+            <p class="item-voucher-detail fw-700">Valor total:</p>
+            <p class="item-voucher-detail fw-700">$121.500</p>
+          </div>
+        </section>
+        <section class="voucher-map">
+          <img src="/assets/imgs/Mapsicle-Map.png" alt="Mapa" class="map" />
+          <div class="voucher-reason">
+            <h4 class="fs-22 fw-700">Motivo de uso</h4>
+            <p class="rectangle-grey fs-16">
+              Si deseas, adiciona la razón por la que usaste el Vale. Esta info
+              será útil para los administradores de la plataforma de tu empresa
+            </p>
+          </div>
+        </section>
+        <section class="voucher-decision">
+          <input type="radio" name="estado" id="Aprobar" class="input" />
+          <label for="Aprobar" class="input-radio fs-16 fw-700">Aprobar</label>
+          <input type="radio" name="estado" id="Rechazar" class="input" />
+          <label for="Rechazar" class="input-radio fs-16 fw-700"
+            >Rechazar</label
+          >
+        </section>
+      </div>
+      <button class="btn-n btn-n-primary">Aprobar Vale</button>
+    </main>
+  </body>
+</html>
