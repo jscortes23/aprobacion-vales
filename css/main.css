@@ -214,6 +214,7 @@ html {
 }
 
 .voucher-map {
+    position: relative;
     margin-top: 16px;
     margin-bottom: 46px;
     display: flex;
@@ -314,6 +315,40 @@ html {
 
 .voucher-reason .fs-22 {
     margin-bottom: 18px;
+}
+
+.pointer-map {
+    position: relative;
+    width: 12px;
+    height: 12px;
+    background-color: var(--verde);
+    border-radius: 50%;
+    border: 2.4px solid #1B1F3B;
+}
+
+.pointer-map::before {
+    position: absolute;
+    bottom: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: attr(data-name);
+    padding: 8px 22px;
+    font-size: var(--sm);
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 6px 6px 0px #00000026;
+}
+
+.pointer-origin {
+    position: absolute;
+    top: 80px;
+    left: 80px;
+}
+
+.pointer-destiny {
+    position: absolute;
+    top: 200px;
+    left: 200px;
 }
 
 /* Media queries */
