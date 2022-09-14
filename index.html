@@ -19,6 +19,7 @@
       onload="this.onload=null;this.rel='stylesheet'"
     />
     <noscript> <link rel="stylesheet" href="/css/main.css" /></noscript>
+    <script defer src="/js/main.js"></script>
   </head>
   <body>
     <main class="container__voucher">
@@ -60,8 +61,8 @@
             <p class="item-voucher-detail">Gilberto Fernández Ordoñez</p>
             <p class="item-voucher-detail">Placa:</p>
             <p class="item-voucher-detail">RMZ616</p>
-            <p class="item-voucher-detail">Recorrido:</p>
-            <p class="item-voucher-detail">Ver mapa</p>
+            <p class="item-voucher-detail hidden">Recorrido:</p>
+            <p class="item-voucher-detail hidden">Ver mapa</p>
           </div>
         </section>
         <section class="row voucher-cost-trip fs-16">
@@ -100,7 +101,7 @@
           >
         </section>
       </div>
-      <button class="btn-n btn-n-primary">Aprobar Vale</button>
+      <input type="submit" value="Aprobar Vale" class="btn-n btn-n-primary" disabled>
     </main>
   </body>
 </html>
