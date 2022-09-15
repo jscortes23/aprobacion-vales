@@ -275,6 +275,7 @@ html {
 .btn-n-primary {
     padding: 16px 32px;
     font-size: var(--lg);
+    color: #000000;
     background-color: var(--verde);
     box-shadow: 0px 4px 4px 0px #00000040;
 }
