@@ -311,8 +311,8 @@ html {
 
 .input-radio::before {
     content: '';
-    width: 30px;
-    height: 30px;
+    min-width: 30px;
+    min-height: 30px;
     border: 2px solid #002765;
     background-color: #FFFFFF;
     border-radius: 50%;
@@ -369,6 +369,19 @@ html {
     position: absolute;
     top: 200px;
     left: 200px;
+}
+
+.voucher-decision-reject {
+    border: none;
+    display: none;
+}
+
+.voucher-decision-reject .fs-22.fw-700 {
+    margin-bottom: 16px;
+}
+
+.input#Rechazar:checked + .input-radio + .voucher-decision-reject {
+   display: block;
 }
 
 /* Media queries */

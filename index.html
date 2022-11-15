@@ -114,15 +114,32 @@
           <label for="Rechazar" class="input-radio fs-16 fw-700"
             >Rechazar</label
           >
+          <fieldset class="voucher-decision-reject">
+            <legend class="fs-22 fw-700">¿Porqué lo rechazas?</legend>
+            <input type="radio" name="rechazado" id="NoSoliciteServicio" class="input">
+            <label for="NoSoliciteServicio" class="input-radio fs-16 fw-700">No solicité el servicio con este vale</label>
+            <input type="radio" name="rechazado" id="ConductorNoLlego" class="input">
+            <label for="ConductorNoLlego" class="input-radio fs-16 fw-700">El conductor nunca llegó</label>
+            <input type="radio" name="rechazado" id="ValorIncorrecto" class="input">
+            <label for="ValorIncorrecto" class="input-radio fs-16 fw-700">El valor no es correcto</label>
+            <input type="radio" name="rechazado" id="DireccionDiferente" class="input">
+            <label for="DireccionDiferente" class="input-radio fs-16 fw-700">La dirección de destino no corresponde</label>
+            <input type="radio" name="rechazado" id="ViajeFinalizo" class="input">
+            <label for="ViajeFinalizo" class="input-radio fs-16 fw-700">El viaje se finalizó después de que dejé el taxi</label>
+            <input type="radio" name="rechazado" id="ProblemasServicio" class="input">
+            <label for="ProblemasServicio" class="input-radio fs-16 fw-700">Tuve problemas al solicitar el servicio</label>
+            <input type="radio" name="rechazado" id="Otro" class="input">
+            <label for="Otro" class="input-radio fs-16 fw-700">Otro</label>
+          </fieldset>
         </section>
-        <p class="txt-alert fw-700 fs-16">
+        <p class="txt-alert fw-700 fs-16 hidden">
           Te notificamos que el 10 de agosto del 2022 a las 01:51 p.m. expiró la
           aprobación del Vale y por ende este ya fue pago al conductor. Recuerda
           que tienes 8 horas desde el envio del correo para aprobarlo o
           rechazarlo.
         </p>
       </div>
-      <button class="btn-n btn-n-primary" type="submit" disabled>Aprobar Vale</button>
+      <button class="btn-n btn-n-primary" type="submit" disabled>Enviar</button>
     </form>
   </body>
 </html>

@@ -4,9 +4,22 @@ const button = document.querySelector(".btn-n-primary");
 
 inputs.forEach((input) => {
   input.addEventListener("click", () => {
-    button.disabled = false;
+    if (input.id !== 'Rechazar') {
+      button.disabled = false;
+    } else {
+      button.disabled = true;
+    }
   });
 });
+
+/* Option reject */
+const inputsReject = document.querySelectorAll('.input[name="rechazado"]');
+
+inputsReject.forEach( (input) => {
+  input.addEventListener('click', () => {
+    button.disabled = false;
+  })
+})
 
 /* Media querie */
 const textsBold = document.querySelectorAll(".txt-purple");
